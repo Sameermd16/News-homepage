@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: grid;
+  /* align-content: center;
+  justify-items: center; */
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+::root{
+  --off-white: hsl(36, 100%, 99%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+  --soft-red: hsl(5, 85%, 63%);
+}
+/* .outer-container{
+  height: 100vh;
+  max-width: 1440px;
+  width: 70%;
+  
+} */
+.container {
+  display: grid;
+  /* border: 2px solid black; */
+  width: 70%; 
+  height: 85vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "header header header"
+    "blocks blocks new"
+    "bright readmore new"
+    "reviving laptops growth";
+  gap: 1rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  /* padding: 100px; */
+}
+.grid {
+  /* border: 1px black solid; */
+}
+.blocks {
+  grid-area: blocks;
+}
+.new {
+  grid-area: new;
+  background: hsl(240, 100%, 5%);
+  color: white;
+}
+.bright {
+  grid-area: bright;
+  /* padding: 0.5rem; */
+  padding: 1.5rem;
+
+}
+.readmore {
+  grid-area: readmore;
+  /* padding: 0.5rem; */
+  padding: 1.5rem;
+
+}
+.reviving {
+  grid-area: reviving;
+}
+.laptops {
+  grid-area: laptops;
+}
+.growth {
+  grid-area: growth;
+}
+.blocks-img {
+  width: 100%;
+  height: 100%;
+}
+.retro-img {
+  width: 100%;
+  height: 100%;
+}
+.reviving {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+
+}
+.laptops-img {
+  width: 100%;
+  height: 100%;
+}
+.laptops {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+
+}
+.growth-img {
+  width: 100%;
+  height: 100%;
+}
+.growth {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+}
+
+.article-img {
+  height: 100%;
+  /* border: 2px dotted red; */
+}
+
+.article {
+  /* border: 2px dotted red; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.new-articles {
+  margin: 1.5rem;
+}
+.new-container {
+  padding: 1rem;
+}
+h3 {
+  margin: 0.5rem 0;
+}
+h3:hover{
+  cursor: pointer;
+  color: hsl(35, 77%, 62%);
+}
+p {
+  line-height: 1.2rem;
+  opacity: 50%;
+}
+button {
+  background: hsl(5, 85%, 63%);
+  font-size: 1rem;
+  color: white;
+  width: 50%;
+  height: 30%;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+button:hover{
+  background: hsl(240, 100%, 5%);
+  cursor: pointer;
+}
+span {
+  opacity: 50%;
+  font-size: 2rem;
+}
+.new-heading {
+  color: hsl(35, 77%, 62%);
+}
+h4 {
+  font-size: 1rem;
+}
+h4:hover{
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 0.5fr 0.5fr 1fr 0.3fr 0.3fr 0.3fr;
+    grid-template-areas:
+      "blocks"
+      "bright"
+      "readmore"
+      "new"
+      "reviving"
+      "laptops"
+      "growth";
+  }
+}
+.header{
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* border: 1px dotted red; */
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+ 
+}
+a{
+  text-decoration: none;
+  margin-left: 2rem;
+  color: black;
+  opacity: 50%;;
+}
+a:hover{
+  cursor: pointer;
+  color: hsl(35, 77%, 62%);
+}
+.logo{
+  /* border: 1px dotted black; */
+  padding: 5px;
+}
+.nav{
+  /* border: 1px dotted blue; */
+  /* display: flex; */
+}
