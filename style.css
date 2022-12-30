@@ -21,7 +21,7 @@ body {
   font-size: 15px;
   font-family: "Inter", sans-serif;
 }
-::root{
+:root{
   --off-white: hsl(36, 100%, 99%);
   --dark-grayish-blue: hsl(236, 13%, 42%);
   --very-dark-blue: hsl(240, 100%, 5%);
@@ -47,7 +47,7 @@ body {
     "reviving laptops growth";
   gap: 1rem;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: auto;
   /* padding: 100px; */
 }
 .grid {
@@ -55,6 +55,7 @@ body {
 }
 .blocks {
   grid-area: blocks;
+  
 }
 .new {
   grid-area: new;
@@ -191,6 +192,12 @@ h4:hover{
       "laptops"
       "growth";
   }
+  .blocks{
+    margin-top: 1rem;
+  }
+  .header .nav-div .nav a{
+    margin: 0.5rem;
+  }
 }
 .header{
   display: flex;
@@ -219,4 +226,12 @@ a:hover{
 .nav{
   /* border: 1px dotted blue; */
   /* display: flex; */
+}
+@media only screen and (min-width: 801px){
+  .container{
+    height: 70vh;
+    margin: 0 auto;
+    
+  }
+  
 }
